@@ -4,8 +4,6 @@ function check_input() {
 
     let go_button: HTMLButtonElement = document.getElementById("go") as HTMLButtonElement;
     if (isNaN(num_rounds) || num_rounds <= 0) {
-        // output_box.innerHTML = "Number of rounds is invalid."
-        //TODO disable Go box
         go_button.disabled = true;
     } else {
         go_button.disabled = false;

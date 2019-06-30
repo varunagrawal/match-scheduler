@@ -46,12 +46,39 @@
 </head>
 
 <body>
-    <input type="text" id="num_rounds" oninput="check_input()" />
-    <p id="input_message"></p>
-    <button id="go" type="button" onclick="run_algorithm()">Go!</button>
-    <br />
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2>Match Scheduler</h2>
+            </div>
+        </div>
+        <br /><br />
 
-    <p id="output"></p>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Number of Rounds</span>
+                    </div>
+                    <input type="text" id="num_rounds" class="form-control" oninput="check_input()" />
+                </div>
+                <p id="input_message"></p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4 text-center">
+                <button id="go" class="btn btn-primary" type="button" onclick="run_algorithm()">Go!</button>
+            </div>
+        </div>
+        <br /><br />
+
+        <div class="row justify-content-center">
+            <div id="output" class="col-6 text-center"></div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
