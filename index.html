@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Match Scheduler">
+    <meta name="description" content="Website for generating round-robin schedules">
     <meta name="author" content="Varun Agrawal">
 
     <!-- Cool styling for mobile browsers-->
@@ -60,7 +60,8 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-default">Number of Participants</span>
                     </div>
-                    <input type="text" id="num_rounds" class="form-control" oninput="check_input()" />
+                    <input type="number" pattern="[0-9]*" id="num_rounds" class="form-control"
+                        oninput="check_input()" />
                 </div>
                 <p id="input_message"></p>
             </div>
